@@ -1,3 +1,5 @@
+<p align="center"><img src="https://raw.githubusercontent.com/St4rmDev/St4rmDev/main/assets/profile-banner.svg" alt="St4rmDev — Software Development and Quality Assurance" width="1200"></p>
+
 # St4rmDev — Software & Quality
 
 Software development, hands-on quality assurance, API integrations and Linux deployment.
@@ -25,7 +27,7 @@ Python · pytest · Postman · Jira · Charles Proxy · Browser DevTools · Git 
 
 Google Cybersecurity Professional Certificate (2024) · AWS Cloud Technology Consultant Professional Certificate (2024) · Cisco Networking Basics (2023) · Goethe-Zertifikat A2 (2026) · ÖSD B1 Schreiben module passed (2026)
 
-Turkish (native) · English (C1) · Russian (B1) · Polish (A2) · German (A2)
+Turkish (native) · English (C1) · Russian (B1) · Polish (A2) · German (B1)
 
 ## Education
 
