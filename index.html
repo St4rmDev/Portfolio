@@ -3,156 +3,75 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#101014">
-  <meta name="description" content="St4rmDev — software development, quality assurance, API integrations and Linux deployment.">
-  <meta property="og:title" content="St4rmDev — Software & Quality">
-  <meta property="og:description" content="Software development, hands-on QA, API integrations and Linux deployment.">
-  <title>St4rmDev — Software &amp; Quality</title>
-  <style>
-:root{color-scheme:dark;--paper:#101014;--paper-deep:#15151b;--ink:#f2f1f4;--muted:#a4a3b0;--line:#303039;--green:#ff6b62;--green-dark:#ff6b62;--rust:#ff6b62;--serif:"Arial",sans-serif;--sans:"Segoe UI",Arial,sans-serif;--mono:Consolas,"Liberation Mono",monospace;--measure:1200px}
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:6rem}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 var(--sans)}::selection{background:#ff6b62;color:#101014}a{color:inherit}a:focus-visible{outline:2px solid #ffb4ac;outline-offset:5px}.shell{width:min(calc(100% - 4rem),var(--measure));margin-inline:auto}.skip-link{position:absolute;top:-5rem;left:1rem;z-index:30;padding:1rem;background:#fff;color:#111}.skip-link:focus{top:1rem}
-.topbar{position:sticky;top:0;z-index:10;background:#101014ee;border-bottom:1px solid #303039;backdrop-filter:blur(16px)}.nav{min-height:80px;display:flex;align-items:center;justify-content:space-between;gap:2rem}.wordmark{font-size:1.3rem;font-weight:850;letter-spacing:-.07em;text-decoration:none}.wordmark span{color:var(--rust)}.nav-links{display:flex;align-items:center;gap:2rem}.nav-links a{font-size:.8rem;text-decoration:none;color:var(--muted)}.nav-links a:hover{color:#fff}.nav-links .nav-contact{color:#fff;border:1px solid #55545f;border-radius:7px;padding:.65rem 1rem}
-.hero{position:relative;padding:6rem 0 3rem}.hero-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:4rem;align-items:center}.eyebrow,.section-index,.small-cap,.date{font:.67rem/1.5 var(--mono);text-transform:uppercase;letter-spacing:.14em}.eyebrow{color:#c2c1cc;display:flex;gap:.7rem;align-items:center}.eyebrow:before{content:"";width:7px;height:7px;background:var(--rust);box-shadow:0 0 0 5px #ff6b6215;border-radius:50%}h1{margin:1.6rem 0;font-size:clamp(3rem,6.6vw,6rem);font-weight:850;line-height:1.02;letter-spacing:-.065em}h1 em{font-style:normal;color:var(--rust)}.hero-copy{color:var(--muted);font-size:1.05rem;max-width:580px}.hero-copy strong{font-weight:500;color:#e5e4ed}.hero-actions{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2rem}.button{display:inline-flex;align-items:center;gap:1.5rem;padding:.85rem 1.25rem;border:1px solid #ff6b62;border-radius:6px;background:var(--rust);color:#171114;font-size:.85rem;font-weight:700;text-decoration:none}.button.secondary{background:transparent;border-color:#41414b;color:#e9e8ef}.button:hover{filter:brightness(1.13)}
-.hero-note{position:relative;padding:1.5rem;background:#19191f;border:1px solid #3b3b46;border-radius:14px;box-shadow:12px 16px 0 #09090c;transform:rotate(1deg)}.panel-head{display:flex;justify-content:space-between;align-items:center;padding-bottom:1.2rem;border-bottom:1px solid #303039;font:.66rem var(--mono);color:#aaa9b9}.window-dots{display:flex;gap:5px}.window-dots i{width:7px;height:7px;border-radius:50%;background:#494853}.window-dots i:first-child{background:var(--rust)}.workflow-title{font:.65rem var(--mono);color:#8d8c9c;letter-spacing:.1em;text-transform:uppercase;margin:1.6rem 0}.flow-step{position:relative;display:grid;grid-template-columns:38px 1fr auto;gap:.8rem;align-items:center;background:#212128;border:1px solid #3a3944;border-radius:7px;padding:1rem;margin:.8rem 0}.flow-step strong{display:block;font-size:.9rem;font-weight:600}.flow-step small{font-size:.72rem;color:var(--muted)}.flow-index{font:.75rem var(--mono);color:var(--rust)}.flow-arrow{color:#6d6c7d;font-size:1.2rem}.flow-note{display:flex;justify-content:space-between;margin-top:1.5rem;padding-top:1rem;border-top:1px dashed #41414c;font:.62rem var(--mono);color:#aaa9b9}.flow-note span:last-child{color:#ff938a}
-.proof-row{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:5rem;padding:2rem 0;border-top:1px solid #3a3944}.proof{display:grid;grid-template-columns:auto 1fr;gap:1.1rem;align-items:center}.proof strong{font-size:2.8rem;letter-spacing:-.06em;line-height:1}.proof span{color:var(--muted);font-size:.76rem;max-width:190px}.proof+.proof{border-left:1px solid var(--line);padding-left:2rem}
-section{padding:6rem 0;border-top:1px solid var(--line)}.section-head{display:grid;grid-template-columns:140px 1fr;gap:2rem;margin-bottom:3rem}.section-index{color:var(--rust);padding-top:.5rem}h2.section-title{font-size:clamp(2rem,4vw,3.5rem);font-weight:750;letter-spacing:-.055em;line-height:1.1;max-width:780px;margin:0}.section-intro{color:var(--muted);margin:1rem 0 0;max-width:630px}
-.experience-list{margin-left:172px}.experience-item{display:grid;grid-template-columns:150px 1fr;gap:2rem;padding:2rem 0;border-top:1px solid var(--line)}.date{color:#9d9cac;font-size:.65rem;letter-spacing:.025em;padding-top:.2rem}.role{font-size:1.2rem;margin:0 0 .3rem;font-weight:650;letter-spacing:-.02em}.role-context{font-size:.8rem;color:#ff938a;margin:.1rem 0 .8rem}.experience-item p:last-child{font-size:.9rem;color:var(--muted);margin:0;max-width:660px}
-.projects{background:#16161c}.project-list{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem}.project{display:flex;flex-direction:column;position:relative;background:#1c1c24;border:1px solid #393844;border-radius:12px;overflow:hidden;padding:1.5rem;transition:transform .2s,border-color .2s}.project:hover{transform:translateY(-5px);border-color:#777480}.project-no{font:.65rem var(--mono);color:var(--rust);margin-bottom:1.4rem;display:flex;justify-content:space-between}.project-no:after{content:"SELECTED WORK";color:#787686;font-size:.58rem;letter-spacing:.1em}.project h3{font-size:1.2rem;line-height:1.3;letter-spacing:-.035em;margin:1.5rem 0 .8rem}.project p{color:var(--muted);font-size:.86rem;margin:0;min-height:115px}.project-aside{font:.62rem/1.8 var(--mono);color:#8d8b9c;margin-top:auto;padding-top:1.2rem;border-top:1px solid #393844;text-transform:uppercase}.project-aside br{display:none}.project-aside br:after{content:" · "}.text-link{font-size:.8rem;color:#ff938a;display:inline-flex;gap:.6rem;text-underline-offset:4px;margin:1.2rem 0 1.7rem}.sample-art{height:160px;padding:1rem;background:#111116;border:1px solid #363540;border-radius:6px;display:flex;flex-direction:column;justify-content:center;gap:.7rem;font:.66rem var(--mono);color:#8f8d9f}.sample-art b{font-weight:400;color:#e9e7ef}.sample-art .sample-label{font-size:.56rem;color:#ff938a;letter-spacing:.1em;margin-bottom:.3rem}.sample-line{display:flex;justify-content:space-between;border-bottom:1px solid #282731;padding-bottom:.4rem}.sample-line:last-child{border:0}.sample-art code{font-size:.62rem}.sample-art code span{color:#ff938a}.sample-nodes{display:flex;align-items:center;gap:.5rem}.sample-node{flex:1;text-align:center;padding:1rem .2rem;border:1px solid #41404e;background:#1e1d27;color:#e8e5ef;border-radius:4px}.sample-nodes i{font-style:normal;color:#ff938a}
-.toolkit-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}.toolkit-group{padding:1.8rem;border:1px solid #36353f;border-radius:8px;background:#17171d}.toolkit-group h3{font:.66rem var(--mono);letter-spacing:.12em;color:#ff938a;text-transform:uppercase;margin:0 0 .9rem}.toolkit-group p{color:var(--muted);font-size:.92rem;line-height:1.9;margin:0}.approach{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;border-left:3px solid var(--rust);padding-left:2rem}.approach blockquote{margin:0;font-size:2rem;letter-spacing:-.035em;font-weight:600;line-height:1.3}.approach-copy{color:var(--muted);font-size:.9rem}.credentials{display:grid;grid-template-columns:1fr 1fr;gap:3rem;border-top:1px solid var(--line);margin-top:4rem;padding-top:2rem}.credentials h3{font:.65rem var(--mono);color:#ff938a;letter-spacing:.12em;text-transform:uppercase;margin:0 0 1rem}.credentials p{font-size:.8rem;color:var(--muted);line-height:1.8;margin:.3rem 0}
-.contact{background:#20191d;position:relative}.contact h2{font-size:clamp(2.5rem,5.5vw,5rem);letter-spacing:-.055em;font-weight:750;line-height:1.04;margin:0;max-width:850px}.contact-row{display:flex;justify-content:space-between;gap:2rem;align-items:center;margin-left:172px;border-top:1px solid #594047;padding-top:1.5rem}.contact-row p{color:#b7a5af;font-size:.9rem;max-width:440px}.contact-link{padding:1rem 1.2rem;border-radius:6px;background:var(--rust);font-size:.85rem;font-weight:650;text-decoration:none;color:#151116;white-space:nowrap}.contact-link:hover{background:#ff938a}footer{background:#20191d;padding:1.5rem 0;color:#99848e;font:.6rem var(--mono)}.footer-row{display:flex;justify-content:space-between;padding-top:1.5rem;border-top:1px solid #443139;gap:1rem}
-@media(max-width:1000px){.hero-grid{gap:2rem}.proof{display:block}.proof span{display:block;margin-top:.5rem}.project-list{grid-template-columns:1fr}.project{display:grid;grid-template-columns:1fr 1.5fr;gap:0 2rem}.project-no{grid-column:1/-1}.project h3{margin-top:0}.project p{min-height:0}.project-aside{grid-column:1/-1;margin-top:1rem}.section-head{grid-template-columns:100px 1fr}.experience-list,.contact-row{margin-left:132px}}
-@media(max-width:760px){.shell{width:calc(100% - 2.5rem)}.nav{min-height:68px}.nav-links{gap:1rem}.nav-links a{font-size:.7rem}.hero{padding-top:3.5rem}.hero-grid{grid-template-columns:1fr;gap:3rem}h1{font-size:clamp(3.5rem,10vw,5rem)}.hero-note{transform:none;max-width:570px}.section-head{grid-template-columns:1fr;gap:.8rem}.experience-list,.contact-row{margin-left:0}.experience-item{grid-template-columns:130px 1fr;gap:1.2rem}.proof-row{gap:1rem;margin-top:3rem}.proof+.proof{padding-left:1rem}.proof strong{font-size:2.3rem}.proof span{font-size:.67rem}.approach{grid-template-columns:1fr;gap:1rem}.credentials{gap:2rem}section{padding-block:4rem}.contact-row{align-items:flex-start;flex-direction:column}.project{gap:0 1.2rem}}
-@media(max-width:520px){.nav-links a:not(.nav-contact){display:none}.eyebrow{font-size:.55rem;letter-spacing:.06em}h1{font-size:3.4rem}.hero-copy{font-size:.95rem}.proof-row{grid-template-columns:1fr;gap:0;padding:0}.proof,.proof+.proof{display:flex;gap:1.4rem;align-items:center;border-left:0;border-bottom:1px solid var(--line);padding:1.1rem 0}.proof strong{min-width:80px}.proof span{max-width:none;font-size:.76rem;margin:0}.experience-item{grid-template-columns:1fr;gap:.6rem}.toolkit-grid,.credentials{grid-template-columns:1fr}.project{display:flex}.project h3{margin-top:1.3rem}.sample-art{flex-shrink:0}.project-aside{width:100%}.approach{padding-left:1.2rem}.approach blockquote{font-size:1.6rem}.footer-row{flex-direction:column}.hero-note{padding:1.1rem;box-shadow:6px 8px 0 #09090c}.flow-step{padding:.8rem}.flow-note{font-size:.55rem}}
-.mobile-menu{display:none;position:relative;font-size:.8rem}.mobile-menu summary{cursor:pointer;padding:.5rem .7rem;border:1px solid #494752;border-radius:5px;list-style:none}.mobile-menu summary::-webkit-details-marker{display:none}.mobile-menu summary span{margin-left:.6rem;color:var(--rust)}.mobile-menu>div{position:absolute;right:0;top:calc(100% + 1rem);width:210px;background:#202027;padding:.5rem;border:1px solid #494752;border-radius:8px;box-shadow:0 15px 40px #0009}.mobile-menu a{display:block;padding:.7rem;text-decoration:none;color:#d4d1de}.mobile-menu a:hover{background:#30303a}.mobile-menu[open] summary span{display:inline-block;transform:rotate(45deg)}
-@media(max-width:520px){.mobile-menu{display:block}.nav-links{margin-left:auto}.nav-links .nav-contact{display:none}.nav{gap:1rem}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
-  </style>
+  <meta name="theme-color" content="#20231f">
+  <meta name="description" content="St4rmDev — software development, hands-on QA, API integrations and Linux deployment. Selected work and experience.">
+  <meta property="og:title" content="St4rmDev — Development & QA">
+  <meta property="og:description" content="Applications, API integrations and hands-on quality assurance. Explore selected work and experience.">
+  <title>St4rmDev — Development &amp; QA</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.png" type="image/png" sizes="64x64">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="topbar">
-    <nav class="nav shell" aria-label="Main navigation">
-      <a class="wordmark" href="#top" aria-label="St4rmDev home">St4rm<span>Dev</span></a>
-      <div class="nav-links">
-        <a href="#experience">Experience</a>
-        <a href="#work">Selected work</a>
-        <a href="#toolkit">Toolkit</a>
-        <a class="nav-contact" href="#contact">Get in touch ↗</a>
-      </div>
-      <details class="mobile-menu"><summary>Menu <span aria-hidden="true">+</span></summary><div><a href="#experience">Experience</a><a href="#work">Selected work</a><a href="#toolkit">Toolkit</a><a href="#contact">Get in touch</a></div></details>
-    </nav>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="masthead wrap" id="top">
+    <div class="masthead-top"><a class="identity" href="#top">St4rmDev<span aria-hidden="true">*</span></a><span class="masthead-note">Software development<br>&amp; quality assurance</span></div>
+    <nav aria-label="Main navigation"><span class="nav-caption">Independent work / Since 2022</span><div><a href="#work">Work <sup>01</sup></a><a href="#experience">Experience <sup>02</sup></a><a href="#toolkit">Skills <sup>03</sup></a><a href="#contact">Contact ↗</a></div></nav>
   </header>
   <main id="main">
-    <div class="hero shell" id="top">
-      <div class="hero-grid">
-        <div>
-          <div class="eyebrow">Software development · Quality assurance</div>
-          <h1>Software that<br>works.<br><em>Down to the<br>details.</em></h1>
-          <p class="hero-copy"><strong>Software developer and QA tester</strong> working across applications, APIs and Linux deployments. I build, connect and troubleshoot software, then test the paths people actually use.</p><div class="hero-actions"><a class="button" href="#work">Explore the work <span aria-hidden="true">↗</span></a><a class="button secondary" href="#experience">View experience <span aria-hidden="true">↓</span></a></div>
-        </div>
-        <aside class="hero-note" aria-label="Development and quality workflow">
-          <div class="panel-head"><span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>WORKFLOW / ST4RMDEV</span><span>01 — 03</span></div>
-          <div class="workflow-title">From an idea to a working release</div>
-          <div class="flow-step"><span class="flow-index">01</span><div><strong>Build &amp; integrate</strong><small>Applications · APIs · Automation</small></div><span class="flow-arrow" aria-hidden="true">↗</span></div>
-          <div class="flow-step"><span class="flow-index">02</span><div><strong>Investigate &amp; test</strong><small>Edge cases · Defects · Retesting</small></div><span class="flow-arrow" aria-hidden="true">↗</span></div>
-          <div class="flow-step"><span class="flow-index">03</span><div><strong>Deploy &amp; maintain</strong><small>Linux · Migrations · Monitoring</small></div><span class="flow-arrow" aria-hidden="true">↗</span></div>
-          <div class="flow-note"><span>DETAILS MATTER.</span><span>THROUGH THE WHOLE RELEASE.</span></div>
-        </aside>
-      </div>
-      <div class="proof-row" aria-label="Selected experience">
-        <div class="proof"><strong>50+</strong><span>functional, exploratory and localization test cycles</span></div>
-        <div class="proof"><strong>100+</strong><span>defects documented with reproducible details</span></div>
-        <div class="proof"><strong>10+</strong><span>mobile device models covered in QA testing</span></div>
-      </div>
-    </div>
+    <section class="intro wrap" aria-labelledby="intro-title">
+      <div class="intro-copy"><span class="kicker">Development + a tester’s eye</span><h1 id="intro-title">Developer.<br><span>QA tester.</span></h1><p>I build applications, connect APIs and test what happens when things don’t go to plan.</p><p class="intro-detail">Python, mobile and desktop projects, hands-on testing, and Linux VPS deployment.</p><a class="underlink" href="#work">Take a look at the work <span aria-hidden="true">↓</span></a></div>
+      <figure class="identity-print" aria-label="St4rmDev graphic mark">
+        <svg viewBox="0 0 560 440" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="mark-title"><title id="mark-title">S4 — St4rmDev</title>
+          <defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#253023" stroke-opacity=".16" stroke-width="1"/></pattern></defs>
+          <rect width="560" height="440" fill="#d6ea8c"/><rect width="560" height="440" fill="url(#grid)"/>
+          <path d="M30 40h24m-12-12v24M506 40h24m-12-12v24M30 400h24m-12-12v24M506 400h24m-12-12v24" stroke="#253023" stroke-width="1"/>
+          <text x="57" y="301" font-family="Arial,sans-serif" font-size="275" font-weight="900" letter-spacing="-29" fill="#253023">S4</text>
+          <circle cx="463" cy="300" r="19" fill="#d15c3c"/>
+          <path d="M63 329H497" stroke="#253023"/><text x="64" y="355" font-family="monospace" font-size="11" letter-spacing="2" fill="#253023">DEVELOPMENT / QUALITY ASSURANCE</text>
+          <text x="65" y="76" font-family="monospace" font-size="11" letter-spacing="1" fill="#253023">ST4RMDEV — SELECTED WORK</text>
+        </svg><figcaption><span>Build. Investigate. Retest.</span><span>Python / APIs / Linux</span></figcaption>
+      </figure>
+    </section>
 
-    <section id="experience">
-      <div class="shell">
-        <div class="section-head">
-          <div class="section-index">01 / Work</div>
-          <div><h2 class="section-title">Experience that spans the whole release.</h2><p class="section-intro">Hands-on testing alongside software work, integration and deployment.</p></div>
-        </div>
-        <div class="experience-list">
-          <article class="experience-item">
-            <div class="date">Sep 2025 — Present</div>
-            <div><h3 class="role">QA Tester</h3><p class="role-context">Crowdsourced testing · Remote</p><p>Completed 50+ functional, exploratory and localization test cycles for web and mobile apps. Reported 100+ defects with clear reproduction steps, screenshots and severity details; inspected Android network traffic with Charles Proxy and retested fixes.</p></div>
-          </article>
-          <article class="experience-item">
-            <div class="date">Jan 2025 — Mar 2025</div>
-            <div><h3 class="role">Mobile Device QA Tester</h3><p class="role-context">Consumer device testing</p><p>Ran functional and regression checks across more than 10 device models and logged 200+ defects, including follow-up verification after fixes.</p></div>
-          </article>
-          <article class="experience-item">
-            <div class="date">2022 — Present</div>
-            <div><h3 class="role">Software Developer &amp; QA Project Lead</h3><p class="role-context">Independent software projects</p><p>Built and tested mobile and desktop apps, Python automation and API-connected tools. Integrated REST APIs and Telegram workflows, handled debugging and edge cases, and deployed and maintained applications on Linux VPS. Project systems recorded more than 5,000 user interactions.</p></div>
-          </article>
-        </div>
+    <section class="work-section" id="work" aria-labelledby="work-title">
+      <div class="wrap">
+        <div class="section-heading"><span class="section-label">01 / Selected work</span><h2 id="work-title">Selected<br><em>work.</em></h2><p>Public QA samples and a look at the software work behind the CV.</p></div>
+        <article class="case case-featured">
+          <div class="case-copy"><span class="kicker">01 — Manual QA / Portfolio sample</span><h3>A checkout flow.<br>One bad promo code.</h3><p>An expired code should produce a useful message. In this mock scenario, it produces a server error instead. The report documents the path to the failure, expected behaviour and triage context.</p><a class="underlink" href="https://github.com/St4rmDev/Portfolio/blob/main/manual_testing/bug_reports/BUG-001_Checkout_Crash.md" target="_blank" rel="noopener noreferrer">Read the defect report ↗</a><a class="quiet-link" href="https://github.com/St4rmDev/Portfolio/blob/main/manual_testing/test_plans/Mock_Ecommerce_Test_Plan.md" target="_blank" rel="noopener noreferrer">View the test plan ↗</a><div class="case-tags">Functional testing / Test design / Defect reporting</div></div>
+          <div class="report-sheet" aria-label="Excerpt from the mock checkout defect report"><div class="sheet-top"><span>DEFECT REPORT</span><span>BUG—001</span></div><h4>Guest checkout<br>× expired promo</h4><div class="report-path"><span>Add item</span><b aria-hidden="true">→</b><span>Guest checkout</span><b aria-hidden="true">→</b><span>Apply code</span></div><dl><div><dt>Expected</dt><dd>“This promo code has expired or is invalid.”</dd></div><div class="observed"><dt>Observed</dt><dd>500 Internal Server Error</dd></div><div><dt>Impact</dt><dd>The checkout flow is blocked.</dd></div></dl><div class="sheet-footer"><span>Mock e-commerce application</span><span>01 / 01</span></div></div>
+        </article>
+        <article class="case case-api">
+          <div class="code-sheet" aria-label="API test examples"><div class="code-heading">API testing / Python + pytest</div><pre><code><span class="code-comment"># Check behaviour, not just the happy path.</span>
+response = requests.get(endpoint)
+
+<span class="code-keyword">assert</span> response.status_code == <span class="code-number">200</span>
+<span class="code-keyword">assert</span> response_time_ms &lt; <span class="code-number">500</span>
+<span class="code-keyword">assert</span> isinstance(data, dict)</code></pre><div class="code-bottom"><span>Status / Timing / JSON / Invalid routes</span><span>PY</span></div></div>
+          <div class="case-copy"><span class="kicker">02 — API testing / Portfolio sample</span><h3>API test<br>automation.</h3><p>Python and pytest examples covering status codes, response time, JSON responses and invalid routes. A compact look at how I approach API test automation.</p><a class="underlink" href="https://github.com/St4rmDev/Portfolio/tree/main/automated_testing" target="_blank" rel="noopener noreferrer">Explore the API tests ↗</a><div class="case-tags">Python / pytest / REST APIs</div></div>
+        </article>
+        <article class="case-integrations"><span class="kicker">03 — Application development</span><h3>Apps, APIs<br>&amp; the systems behind them.</h3><div><p>Independent projects across mobile and desktop applications, API-connected automation and Telegram systems. The work includes integration, debugging, testing and Linux VPS deployment, with more than 5,000 recorded user interactions across project systems.</p><a class="underlink" href="https://github.com/St4rmDev" target="_blank" rel="noopener noreferrer">Browse public repositories ↗</a></div></article>
       </div>
     </section>
 
-    <section class="projects" id="work">
-      <div class="shell">
-        <div class="section-head">
-          <div class="section-index">02 / Selected work</div>
-          <div><h2 class="section-title">Selected work.<br>Code, testing and delivery.</h2><p class="section-intro">A mix of hands-on QA examples and software delivery work.</p></div>
-        </div>
-        <div class="project-list">
-          <article class="project">
-            <div class="project-no">01</div><div class="sample-art" aria-label="Illustrative defect report"><div class="sample-label">QA SAMPLE / CHECKOUT</div><div class="sample-line"><span>Expected</span><b>Validation message</b></div><div class="sample-line"><span>Actual</span><b>500 error</b></div><div class="sample-line"><span>Evidence</span><b>Steps + context</b></div></div>
-            <div><h3>Test plans &amp; defect reports</h3><p>Sample manual QA work for a mock shopping flow: scope, test strategy, reproducible defect steps and expected behaviour.</p><a class="text-link" href="https://github.com/St4rmDev/Portfolio/tree/main/manual_testing" target="_blank" rel="noopener noreferrer">View QA samples <span aria-hidden="true">↗</span></a></div>
-            <div class="project-aside">Manual QA <span aria-hidden="true"> / </span> Test design <span aria-hidden="true"> / </span> Defect reporting</div>
-          </article>
-          <article class="project">
-            <div class="project-no">02</div><div class="sample-art" aria-label="Illustrative API test checks"><div class="sample-label">API / ASSERTIONS</div><code><span>assert</span> response.status_code == 200</code><code><span>assert</span> response_time &lt; 500</code><code><span>assert</span> isinstance(data, dict)</code><div class="sample-line"><span>Focus</span><b>Behaviour + edge cases</b></div></div>
-            <div><h3>API test automation</h3><p>Python and pytest examples for checking response codes, response time, JSON behaviour and invalid routes.</p><a class="text-link" href="https://github.com/St4rmDev/Portfolio/tree/main/automated_testing" target="_blank" rel="noopener noreferrer">View automation samples <span aria-hidden="true">↗</span></a></div>
-            <div class="project-aside">Python <span aria-hidden="true"> / </span> pytest <span aria-hidden="true"> / </span> REST APIs</div>
-          </article>
-          <article class="project">
-            <div class="project-no">03</div><div class="sample-art" aria-label="Application integration diagram"><div class="sample-label">APPLICATION / CONNECTIONS</div><div class="sample-nodes"><span class="sample-node">APP</span><i aria-hidden="true">→</i><span class="sample-node">API</span><i aria-hidden="true">→</i><span class="sample-node">LINUX</span></div><div class="sample-line"><span>Delivery</span><b>Build · Test · Maintain</b></div></div>
-            <div><h3>Apps, integrations &amp; deployment</h3><p>Independent work across mobile and desktop applications, API-connected automation and Telegram systems, from integration and debugging through Linux VPS deployment.</p><a class="text-link" href="https://github.com/St4rmDev" target="_blank" rel="noopener noreferrer">Browse public repositories <span aria-hidden="true">↗</span></a></div>
-            <div class="project-aside">Python <span aria-hidden="true"> / </span> REST APIs <span aria-hidden="true"> / </span> Linux VPS</div>
-          </article>
-        </div>
+    <section class="experience-section wrap" id="experience" aria-labelledby="experience-title">
+      <div class="section-heading compact"><span class="section-label">02 / Experience</span><h2 id="experience-title">Development<br>&amp; testing.</h2></div>
+      <div class="experience-list">
+        <article class="experience-item"><span class="date">2022 — Present</span><div><h3>Software Developer<br>&amp; QA Project Lead</h3><span class="role-context">Independent software projects</span></div><p>Mobile and desktop apps, Python automation, third-party API integrations and Telegram workflows. Deployment, migration and maintenance on Linux VPS, including troubleshooting and updates.</p></article>
+        <article class="experience-item"><span class="date">Sep 2025 — Present</span><div><h3>QA Tester</h3><span class="role-context">Crowdsourced testing / Remote</span></div><p>50+ functional, exploratory and localization test cycles for web and mobile apps. 100+ defects documented with reproducible steps, screenshots and severity details. Android network inspection with Charles Proxy and fix retesting.</p></article>
+        <article class="experience-item"><span class="date">Jan — Mar 2025</span><div><h3>Mobile Device<br>QA Tester</h3><span class="role-context">Consumer device testing</span></div><p>Functional and regression testing across more than 10 device models. 200+ defects logged and tracked, including verification after fixes.</p></article>
       </div>
     </section>
 
-    <section id="toolkit">
-      <div class="shell">
-        <div class="section-head">
-          <div class="section-index">03 / Toolkit</div>
-          <div><h2 class="section-title">Practical tools for finding and fixing problems.</h2></div>
-        </div>
-        <div class="toolkit-grid">
-          <div class="toolkit-group"><h3>Quality assurance</h3><p>Functional · Exploratory · Regression · Localization · API · Mobile · Bug reporting · Retesting</p></div>
-          <div class="toolkit-group"><h3>Development</h3><p>Python · REST APIs · Git · SQL · Desktop and mobile projects</p></div>
-          <div class="toolkit-group"><h3>Test tools</h3><p>Jira · Postman · Charles Proxy · Browser DevTools · pytest</p></div>
-          <div class="toolkit-group"><h3>Systems</h3><p>Linux VPS · Deployment and migration · Monitoring · Telegram Bot API</p></div>
-        </div>
-        <div class="approach" style="margin-top:clamp(4rem,8vw,7rem)">
-          <blockquote>“A useful bug report makes the next step obvious.”</blockquote>
-          <div class="approach-copy"><p>I focus on the details a team needs to act: where the issue happens, how to repeat it, what should happen and what happened instead.</p><p>My development and deployment experience helps me follow issues across interfaces, APIs and the systems behind them.</p></div>
-        </div>
-        <div class="credentials">
-          <div><h3>Certificates &amp; exams</h3><p>Google Cybersecurity Professional Certificate · 2024</p><p>AWS Cloud Technology Consultant Professional Certificate · 2024</p><p>Cisco Networking Basics · 2023</p><p>Goethe-Zertifikat A2 · 2026</p><p>ÖSD B1 · Schreiben module passed · 2026</p></div>
-          <div><h3>Education &amp; languages</h3><p>Management Information Systems · Bachelor’s studies in progress</p><p>Associate degree · Medical Laboratory Techniques</p><p>Turkish · Native &nbsp; / &nbsp; English · C1</p><p>Russian · B1 &nbsp; / &nbsp; Polish · A2 &nbsp; / &nbsp; German · B1</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact" id="contact">
-      <div class="shell">
-        <div class="section-head">
-          <div class="section-index">04 / Contact</div>
-          <div><h2>Have a project or a role in mind?</h2></div>
-        </div>
-        <div class="contact-row"><p>For professional enquiries, reach me through my public GitHub profile.</p><a class="contact-link" href="https://github.com/St4rmDev" target="_blank" rel="noopener noreferrer">Connect on GitHub ↗</a></div>
-      </div>
-    </section>
+    <section class="about-section" id="toolkit" aria-labelledby="about-title"><div class="wrap about-grid">
+      <div><span class="section-label">03 / Skills &amp; background</span><h2 id="about-title">The toolkit.</h2><p class="about-note">Development and testing inform each other. I follow an issue from what a user sees through the API and the system behind it.</p></div>
+      <div class="tool-list"><div><h3>Development</h3><p>Python · REST APIs · Git · SQL · Desktop and mobile projects</p></div><div><h3>Testing</h3><p>Functional · Exploratory · Regression · Localization · Mobile · API · Retesting</p></div><div><h3>Tools</h3><p>Jira · Postman · Charles Proxy · Browser DevTools · pytest</p></div><div><h3>Infrastructure</h3><p>Linux VPS · Deployment · Migration · Monitoring · Telegram Bot API</p></div></div>
+      <div class="credentials"><h3>Certificates</h3><ul><li>ÖSD Zertifikat B1 <span>2026</span></li><li>Goethe-Zertifikat A2 <span>2026</span></li><li>Google Cybersecurity Professional Certificate <span>2024</span></li><li>AWS Cloud Technology Consultant Professional Certificate <span>2024</span></li><li>Cisco Networking Basics <span>2023</span></li></ul></div>
+      <div class="languages"><h3>Languages</h3><dl><div><dt>English</dt><dd>C1</dd></div><div><dt>German</dt><dd>B1 · ÖSD certified</dd></div><div><dt>Russian</dt><dd>B1 · Certified</dd></div><div><dt>Polish</dt><dd>A2</dd></div><div><dt>Turkish</dt><dd>Native</dd></div></dl></div>
+    </div></section>
+    <section class="contact-section wrap" id="contact" aria-labelledby="contact-title"><span class="section-label">04 / Contact</span><h2 id="contact-title">Projects, roles<br>&amp; enquiries<span>.</span></h2><div class="contact-bottom"><p>For professional enquiries,<br>find me on my public GitHub profile.</p><a href="https://github.com/St4rmDev" target="_blank" rel="noopener noreferrer">Let’s connect <span aria-hidden="true">↗</span></a></div></section>
   </main>
-  <footer><div class="shell footer-row"><span>St4rmDev · Software development &amp; quality assurance</span><span>© <span id="year">2026</span></span></div></footer>
-<script>
-  document.querySelectorAll('.mobile-menu a').forEach(link => {
-    link.addEventListener('click', () => link.closest('details').removeAttribute('open'));
-  });
-</script>
+  <footer class="wrap"><a href="#top">St4rmDev *</a><span>Development &amp; quality assurance</span><a href="#top">Back to top ↑</a></footer>
 </body>
 </html>

@@ -25,12 +25,6 @@ Python · pytest · Postman · Jira · Charles Proxy · Browser DevTools · Git 
 
 ## Certifications & language
 
-Google Cybersecurity Professional Certificate (2024) · AWS Cloud Technology Consultant Professional Certificate (2024) · Cisco Networking Basics (2023) · Goethe-Zertifikat A2 (2026) · ÖSD B1 Schreiben module passed (2026)
+Google Cybersecurity Professional Certificate (2024) · AWS Cloud Technology Consultant Professional Certificate (2024) · Cisco Networking Basics (2023) · Goethe-Zertifikat A2 (2026) · ÖSD Zertifikat B1 (2026)
 
-Turkish (native) · English (C1) · Russian (B1) · Polish (A2) · German (B1)
-
-## Education
-
-Management Information Systems bachelor’s studies (in progress) · Associate degree in Medical Laboratory Techniques
-
-For professional enquiries, connect through [GitHub](https://github.com/St4rmDev).
+Turkish (native) · English (C1) · Russian (B1, certified) · Polish (A2) · German (B1)
